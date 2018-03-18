@@ -225,6 +225,8 @@ class Module {
             type: `${action.type}/ERROR`,
             message: e.message,
           });
+
+          reject(e);
         }
       }
     }.bind(this));
